@@ -1,0 +1,82 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Derek Paulsen}
+
+\basicInfo{
+  \email{dpaulsen2@wisc.edu} \textperiodcentered\ 
+  \phone{612-875-9741}% \textperiodcentered\ 
+  %\linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+}
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{University of Wisconsin, Madison}}{2018 -- Present}
+\textit{PhD student} in Computer Sciences
+\datedsubsection{\textbf{University of Wisconsin, Madison}}{2015 -- 2018}
+\textit{B.S.} in Computer Sciences 
+\datedsubsection{\textbf{Normandale Community College}, Bloomington, Minnesota}{2012 -- 2015}
+General Education
+
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{University of Wisconsin, Madison}}{2018 -- Present}
+\role{Research Assistant}{Advisor: AnHai Doan}
+%TODO
+
+
+\begin{itemize}
+  \item Human-in-the-loop value normalization
+  \item Entity Matching 
+\end{itemize}
+
+\datedsubsection{\textbf{Projects}}{2015 -- Present}
+\role{Developer}{Winston}
+
+Winston is a system for doing human-in-the-loop value normalization, which uses machine learning 
+algorithm to cluster a set of values and then generates an efficient plan for a person or team 
+of people to verify and clean the output.
+\begin{itemize}
+    \item Running simulations
+    \item Implementation of collaborative algorithm 
+\end{itemize}
+
+\role{Developer}{tSmurf}
+tSmurf is an extension of a string matching system Smurf (String Matching using Random Forests) written in C++, 
+to be used for entity matching. The system uses active learning to learn random forest and then 
+generates and efficient plan to execute the random forest over two tables, without doing blocking.
+
+
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: C++ == Python > C > Java > Julia > R
+  \item Platform: Linux
+  \item Development: Backend
+\end{itemize}
+
+\section{\faHeartO\ Honors and Awards}
+\datedline{\textit{Dean's List}, University of Wisconsin, Madison }{2015 - 2018}
+\datedline{\textit{Distinction in Major}, University of Wisconsin, Madison}{2018}
+
+\section{\faInfo\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+  \item GitHub: https://github.com/derekpaulsen
+  \item Languages: English - Fluent
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
