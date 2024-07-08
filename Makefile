@@ -11,6 +11,7 @@ zh_CN:	clean xelatex resume-zh_CN.tex
 pdf:	clean $(PDFS)
 
 %.pdf:  %.tex
+	#pdflatex $<
 	xelatex $<
 
 ifeq ($(OS),Windows_NT)
