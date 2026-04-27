@@ -1,5 +1,12 @@
 
+
 \documentclass{resume}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+	urlcolor = blue,
+    %linkbordercolor = {white},
+}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -12,44 +19,45 @@
 {612-875-9741}
 \textperiodcentered\
 {Citizenship : USA}
-%\linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+
 }
+
+\begin{center}
+\github[derekpaulsen]{https://github.com/derekpaulsen}
+\textperiodcentered\
+\linkedin[derek-paulsen-phd]{https://www.linkedin.com/in/derek-paulsen-phd}
+\end{center}
 \section{Education}
+% dennis: consider condensing schools
 \datedsubsection{\textbf{University of Wisconsin, Madison}}{2025}
-\textit{PhD student} in Computer Sciences
+\textit{PhD} in Computer Sciences, GPA 3.97/4.0\\
+Dissertation: \href{https://asset.library.wisc.edu/1711.dl/T5EYCB4OJHRY48T/R/file-ba993.pdf}{\underline{Toward Effective Blocking for Entity Matching}}
 
 \datedsubsection{\textbf{University of Wisconsin, Madison}}{2018}
-\textit{B.S.} in Computer Sciences 
+\textit{B.S.} in Computer Sciences, \textit{Distinction in Major}, GPA 4.0/4.0
 
 \section{Experience}
-
-\datedsubsection{\textbf{Salesforce}}{2026 -- present}
-\role{Senior Machine Learning Engineer}
-
-Designing and developing scalable data pipelines, and LLM-based workflows.
-
-\begin{itemize}
-	\item Developed data enrichment pipelines to enable agentic AI features on legacy data catalog.
-	\item Developed scalable data pipelines using Spark and LLMs.
-\end{itemize}
-
-
-\datedsubsection{\textbf{Informatica LLC}}{2020 -- 2026}
+% possibly combine salesforce and informatica
+% diversify to include leadership experience, and include impact (preferably measurable)
+\datedsubsection{\textbf{Salesforce} (formerly Informatica LLC)}{2020 -- present}
 \role{Senior Machine Learning Engineer}
 
 Designing and developing scalable entity matching solutions, data pipelines, and LLM-based workflows.
 
 \begin{itemize}
-	\item Developed scalable data enrichment pipelines using Spark and LLMs.
-	\item Developed text classification system for on-prem product management system.
-	\item Designed and developed cloud-based infrastructure for legacy entity matching system.
+	\item Developed scalable data enrichment and indexing pipelines using Spark, elasticsearch, and LLMs. Generated indexes form core context used by AI based features.
+	\item Developed novel entity matching solution that scaled existing solution to 10x the data size and reduced deployment cost by 98\%. 
+		Solution was called out by CTO in monthly engineering all hands meeting.
+	\item Developed product classification system for legacy on-prem product, improved classification accuracy from 50\% to 95\%+.
 	\item Integrated machine learning based entity matching system into data management products.
 \end{itemize}
 
-\datedsubsection{\textbf{Greenbay Technologies LLC}}{2019 -- 2020}
+\datedsubsection{\textbf{Greenbay Technologies LLC} (acquired by Informatica LLC, 2020)}{2019 -- 2020}
 \role{Co-Founder}
 
-Entity matching start up, acquired by Informatica LLC in 2020
+Entity matching start up, focused on cloud based entity matching using Spark,
+
+% TODO refine this
 \begin{itemize}
 	\item Designed and developed Spark-based end to end entity matching system.
 	\item Trained and tune machine learning models for matching tasks.
@@ -58,16 +66,20 @@ Entity matching start up, acquired by Informatica LLC in 2020
 \datedsubsection{\textbf{University of Wisconsin, Madison}}{2018 -- 2025}
 \role{Research Assistant}{Advisor: AnHai Doan}
 
-Designed, developed, and evaluated distributed and scalable entity matching solutions focusing 
-on indexing and retrieval. 
+% TODO add currently part of a start up, add link to start up
+Distributed and scalable entity matching solutions focusing 
+on indexing and retrieval. All projects are currently open-source and part of the \href{https://madmatcher.ai/}{\underline{MadMatcher}}
+start up. 
+
 \begin{itemize}
-	\item Designed and developed Sparkly a distributed blocker for entity matching, which out-performs state of the art blockers for entity matching and scales to 200M+ records. 
-	\item Designed and developed Delex an extensible rule execution system built on top of Spark.
-	\item Designed and developed Active Matcher a Spark-based framework for training and inference of machine learning models for entity matching.
+	\item \href{https://github.com/anhaidgroup/sparkly}{\underline{Sparkly}}: a distributed blocker for entity matching, which out-performs state-of-the-art blockers for entity matching and scales to 200M+ records. 
+	\item \href{https://github.com/anhaidgroup/delex}{\underline{Delex}}: first of its kind extensible rule execution system built on top of Spark.
+	\item \href{https://github.com/anhaidgroup/active\_matcher}{\underline{Active Matcher}}: a Spark-based framework for training and inference of machine learning models for entity matching.
 \end{itemize}
 
 
 \section{\textbf{Publications}}
+% TODO Add thesis?
 
 \textbf{Derek Paulsen}, Yash Govind, Anhai Doan
 \textit{``Sparkly: A Simple yet Surprisingly Strong TF/IDF Blocker for Entity Matching''},
@@ -105,15 +117,16 @@ Proceedings of the 2019 International Conference on Management of Data, 2019.\\
 	\item Databases: Elasticsearch, Postgres, SQLite, Redis, Iceberg
 \end{itemize}
 
-\section{Honors and Awards}
-\datedline{\textit{Dean's List}, University of Wisconsin, Madison }{2015 - 2018}
-\datedline{\textit{Distinction in Major}, University of Wisconsin, Madison}{2018}
+%\section{Honors and Awards}
+%\datedline{\textit{Dean's List}, University of Wisconsin, Madison }{2015 - 2018}
+%\datedline{\textit{Distinction in Major}, University of Wisconsin, Madison}{2018}
 
-\section{Links}
-\begin{itemize}[parsep=0.5ex]
-	\item GitHub: \href{https://github.com/derekpaulsen}{https://github.com/derekpaulsen}
-	\item LinkedIn: \href{https://www.linkedin.com/in/derek-paulsen-phd-11ab95180}{https://www.linkedin.com/in/derek-paulsen-phd-11ab95180}
-\end{itemize}
+%\section{Links}
+%% TODO put links in header
+%\begin{itemize}[parsep=0.5ex]
+%	\item GitHub: \href{https://github.com/derekpaulsen}{https://github.com/derekpaulsen}
+%	\item LinkedIn: \href{https://www.linkedin.com/in/derek-paulsen-phd}{https://www.linkedin.com/in/derek-paulsen-phd}
+%\end{itemize}
 
 
 %\section{Miscellaneous}
